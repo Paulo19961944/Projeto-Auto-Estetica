@@ -1,0 +1,224 @@
+/*ESTILO GLOBAL*/
+*{
+    margin: 0; /*Zera a Margem*/
+    padding: 0; /*Zera o Preenchimento*/
+    box-sizing: border-box; /*Ajusta o Box Model*/
+}
+
+/*ELEMENTO RAIZ*/
+html{
+    scroll-behavior: smooth; /*Suaviza a rolagem do Elemento Raíz*/
+}
+
+/*ELEMENTO RAIZ E CONTEÚDO PÁGINA INTEIRA*/
+html, body{
+    width: 100%; /*Largura de 100%*/
+    min-height: 100vh; /*Altura de 100%*/
+}
+
+/*CONTEÚDO PÁGINA INTEIRA*/
+body{
+    position: relative; /*Posição Relativa*/
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Direção em Colunas*/
+    align-items: center; /*Alinha o Eixo Perpendicular ao Centro*/
+    background-color: #06070e; /*Cor de Fundo - Preta*/
+    color: #FFFFFC; /*Cor da Fonte - Branca*/
+}
+
+/*TÍTULO PRINCIPAL*/
+h1{
+    margin: 184px 0 64px 0; /*Margem | Superior - Direita - Inferior e Esquerda*/
+    text-align: center; /*Alinha o Texto ao Centro*/
+}
+
+/*TITULOS E LINKS*/
+h1, h2, h3, a{
+    font-family: "Gudea", sans-serif; /*Fonte do Google - Gudea*/
+}
+
+/*TÍTULOS MENOS IMPORTANTES E LINKS*/
+h2, h3, a{
+    margin: 96px 0 64px 0; /*Margem | Superior - Direita - Inferior e Esquerda*/
+    font-size: 1.75em; /*Tamanho da Fonte de 175%*/
+    text-align: center; /*Alinha o texto ao centro*/
+}
+
+/*PARÁGRAFOS*/
+p{
+    font-family: "Quattrocento Sans", sans-serif; /*Fonte do Google - Quattrocento Sans*/
+    font-size: 0.75em; /*Tamanho da fonte de 75%*/
+    margin-top: 24px; /*Margem Superior de 24px*/
+}
+
+/*TODAS AS IMAGENS*/
+img{
+    width: 100%; /*Largura de 100%*/
+    border-radius: 8px; /*Arredonda a Borda*/
+}
+
+/*ESCONDE O ELEMENTO NO MOBILE*/
+.hidden-mobile{
+    display: none; /*Esconde o Elemento*/
+}
+
+/*CABEÇALHO*/
+header{
+    height: 96px; /*Altura de 96px*/
+    position: fixed; /*Posição Fixa*/
+    top: 0; /*Alinha no Topo da Página*/
+    padding: 0 10%; /*Zera o Preeenchimento na Vertical e Preenchimento de 10% nas Laterais*/
+    width: 100%; /*Largura de 100%*/
+    background-color: #06070e; /*Cor de Fundo - Preta*/
+    box-shadow: 0.2px 0.2px 7px #ffc300; /*Sombra Amarela*/
+    display: flex; /*Flexbox*/
+    align-items: center; /*Alinha ao centro no Eixo Perpendicular*/
+    justify-content: space-between; /*Alinha os elementos na lateral no eixo principal*/
+}
+
+/*LOGOTIPO*/
+#logo{
+    width: 80px; /*Largura de 80px*/
+}
+
+/*BOTÃO DE ABRIR O MENU NO CELULAR*/
+#abrirMenuMobile{
+    width: 48px; /*Largura de 48px*/
+    height: 26.72px; /*Altura de 26.72px*/
+}
+
+/*BOTÃO DE FECHAR O MENU NO CELULAR*/
+#fecharMenuMobile{
+    z-index: 2; /*Camada 2*/
+    width: 24px; /*Largura de 24px*/
+}
+
+/*ADICIONA CLASSE PARA MANIPULAR NO JAVASCRIPT DE ABRIR O MENU NO CELULAR*/
+#abrirMenuMobile.abrir-menu-responsive{
+    display: none; /*Esconde o Elemento*/
+}
+
+/*BOTÃO DE FECHAR MENU NO CELULAR*/
+#fecharMenuMobile{
+    display: none; /*Esconde o Elemento*/
+}
+
+/*ADICIONA CLASSE PARA MANIPULAR O BOTÃO DE FECHAR MENU PELO JAVASCRIPT*/
+#fecharMenuMobile.fechar-menu-responsive{
+    display: inline; /*Display em Linha*/
+}
+
+/*MENU DE NAVEGAÇÃO*/
+#menu{
+    display: none; /*Esconde o Menu*/
+}
+
+/*ADICIONA CLASSE PARA MANIPULAR O MENU PELO JAVASCRIPT*/
+#menu.menu-responsive{
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Direção em Colunas*/
+    align-items: center; /*Alinha o Eixo Perpendicular ao Centro*/
+    justify-content: center; /*Alinha o Eixo Principal ao Centro*/
+    gap: 48px; /*Espaçamento de 48px*/
+    background-color: #ffc300f5; /*Cor de Fundo - Amarela*/
+    position: absolute; /*Posição Absoluta*/
+    top: 0; /*Alinha no Topo*/
+    left: 0; /*Alinha na Esquerda*/
+    width: 100vw; /*Largura Máxima de 100% da Tela*/
+    height: 100vh; /*Altura Máxima de 100% da Tela*/
+}
+
+/*LISTAS DO MENU*/
+#menu li{
+    list-style: none; /*Remove as Listas do Menu*/
+}
+
+/*LINKS DE NAVEGAÇÃO DO MENU*/
+#menu li a{
+    border: 1px solid #06070e; /*Borda de 1px Preta*/
+    border-radius: 4px; /*Arredonda as Bordas*/
+    font-weight: bold; /*Fonte em Negrito*/
+    text-decoration: none; /*Tira o Sublinhado*/
+    font-size: 1em; /*Tamanho da Fonte de 1em*/
+    padding: 16px; /*Preenchimento de 16px para todos os lados*/
+    color: #06070e; /*Cor da fonte - Preta*/
+}
+
+/*SEÇÕES DO MENU PRINCIPAL*/
+main section{
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    align-items: center; /*Alinha ao Centro no Eixo Perpendicular*/
+    padding: 0 24px; /*Espaçamento de 24px nas laterais e zera na vertical*/
+}
+
+/*PARÁGRAFOS E IMAGENS DA SEÇÃO DO MENU PRINCIPAL*/
+main section p, main section img{
+    max-width: 336px; /*Largura Máxima de 336px*/
+}
+
+/*IMAGENS DA SEÇÃO DO MENU PRINCIPAL*/
+main section img{
+    border: 1px solid #FFFFFC; /*Borda Branca*/
+}
+
+/*TODOS OS CARDS*/
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+    border-radius: 8px;
+    padding: 48px 32px;
+}
+
+/*CARDS DA SEÇÃO DO NOSSOS SERVIÇOS*/
+.nossos-servicos .cards{
+    background-color: #ffc300; /*Cor de Fundo - Amarelo*/
+    color: #06070e; /*Cor do Texto - Preta*/
+}
+
+/*TITULO DOS CARDS*/
+.cards h3{
+    margin: 0 0 32px 0; /*Margem | Superior - Direita - Inferior e Esquerda*/
+    font-size: 1.28em; /*Tamanho da Fonte de 128%*/
+}
+
+/*CARDS DA SEÇÃO NOSSOS CLIENTES*/
+.nossos-clientes .cards{
+    background-color: #FFFFFC; /*Cor de Fundo - Branca*/
+    color: #06070e; /*Cor do Texto - Preta*/
+}
+
+/*IMAGENS DAS 5 ESTRELAS*/
+.estrelas{
+    width: 119px; /*Largura de 119px*/
+    border: none; /*Tira a Borda*/
+}
+
+/*RODAPÉ*/
+footer{
+    box-shadow: 0.2px 0.2px 10px #ffc300; /*Sombra Amarela*/
+    width: 100%; /*Largura de 100%*/
+    height: 96px; /*Altura de 96px*/
+    display: flex; /*Flexbox*/
+    justify-content: center; /*Alinha ao Centro no Eixo Principal*/
+    align-items: center; /*Alinha ao Centro no Eixo Perpendicular*/
+    background-color: #FFFFFC; /*Cor de Fundo - branca*/
+}
+
+/*TODOS OS ICONES*/
+.icones{
+    margin-left: 24px; /*Margem a Esquerda de 24px*/
+    width: 24px; /*Largura de 24px*/
+}
+
+/*ICONE DO WHATSAPP*/
+#whatsapp{
+    width: 32px; /*Largura de 32px*/
+}
+
+/*ICONE DO FACEBOOK*/
+#facebook{
+   width: 28px; /*Largura de 28px*/
+}

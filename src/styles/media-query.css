@@ -1,0 +1,162 @@
+/*TABLET*/
+@media (min-width: 480px){
+    /*TODOS OS TÍTULOS*/
+    h1, h2, h3{
+        font-size: 2em; /*Tamanho da Fonte de 200%*/ 
+    }
+
+    /*TODOS OS PARÁGRAFOS*/
+    p{
+        font-size: 1em; /*Tamanho da Fonte de 100%*/
+    }
+
+    /*SEÇÕES DO CONTEÚDO PRINCIPAL*/
+    main section{
+        padding: 0 40px; /*Zera o Preenchimento Vertical e Preenchimento na horizontal de 40px*/
+    }
+
+    /*TODAS AS IMAGENS E PARÁGRAFOS DA SEÇÃO DO CONTEÚDO PRINCIPAL*/
+    main section img, main section p{
+        max-width: 520px; /*Largura Máxima de 520px*/
+    }
+
+    /*TODOS OS CARDS*/
+    .cards{
+        padding: 80px 64px; /*Preenchimento de 80px na Vertical e de 64px na Horizontal*/
+        margin-bottom: 96px; /*Margem Inferior de 96px*/
+    }
+
+    /*TITULO DOS CARDS*/
+    .cards h3{
+        font-size: 1.5em; /*Tamanho da Fonte de 150%*/
+    }
+}
+
+/*DESKTOP*/
+@media (min-width: 1024px){
+    /*CABEÇALHO*/
+    header{
+        height: 160px; /*Largura de 160px*/
+    }
+
+    /*TÍTULO DA PÁGINA*/
+    h1{
+        margin: 256px 0 64px 0; /*Margem | Topo - Direita - Inferior - Esquerda*/
+        text-align: center; /*Alinha o texto ao centro*/
+    }
+
+    /*LOGOTIPO*/
+    #logo{
+        width: 120px; /*Largura de 120px*/
+    }
+
+    /*BOTÃO DE ABRIR MENU NO MOBILE*/
+    #abrirMenuMobile{
+        display: none; /*Esconde o Elemento*/
+    }
+
+    /*MENU DE NAVEGAÇÃO*/
+    #menu{
+        display: flex; /*Flexbox*/
+    }
+
+    /*MENU QUANDO A CLASSE ESTÁ SENDO ADICIONADA*/
+    #menu.menu-responsive{
+        gap: 0; /*Zera o Espaçamento*/
+        flex-direction: row; /*Alinha um do lado do outro*/
+        position: fixed; /*Posição Fixa*/
+        top: 0; /*Zera o Topo*/
+        left: 300px; /*Ajusta a Esquerda*/
+        height: 160px; /*Altura de 160px*/
+        background-color: #06070e; /*Cor de Fundo Preta*/
+    }
+
+    /*LINKS DE NAVEGAÇÃO DO MENU*/
+    #menu li a{
+        border: none; /*Tira a Borda*/
+        font-weight: 500; /*Fonte com peso de 500*/
+        padding: 0; /*Zera o Preenchimento*/
+        margin: 0; /*Zera a Margem*/
+        margin-right: 32px; /*Margem a Direita de 32px*/
+        color: #FFFFFC; /*Cor de Fundo Branca*/
+    }
+
+    /*LINKS DE NAVEGAÇÃO DO MENU AO PASSAR O MOUSE*/
+    #menu li a:hover{
+        color: #ffc300; /*Cor da Fonte - Amarela*/
+    }
+
+    /*BOTÃO DE FECHAR MENU COM A CLASSE ADICIONADA*/
+    #fecharMenuMobile.fechar-menu-responsive{
+        display: none; /*Esconde o Elemento*/
+    }
+
+    /*CONTAINER DA PÁGINA*/
+    .container{
+        max-width: 1200px; /*Largura Máxima de 1200px*/
+    }
+
+    /*SEÇÕES DO CONTEÚDO PRINCIPAL*/
+    main section{
+        padding: 0 96px; /*Zera o Preenchimento na Vertical e Preenchimento de 96px na Horizontal*/
+    }
+
+    /*TODAS AS IMAGENS E PARÁGRAFOS DO CONTEÚDO PRINCIPAL*/
+    main section img, main section p{
+        width: 100%;
+    }
+
+    /*CONTAINER DA HOME*/
+    .home-container{
+        display: flex; /*Flexbox*/
+        flex-direction: row; /*Alinha um do lado do outro*/
+        align-items: start; /*Alinha o no Inicio os itens no Eixo Perpendicular*/
+        gap: 48px; /*Espaçamento de 48px*/ 
+    }    
+
+    /*CONTAINER DA IMAGEM*/
+    .image-container{
+        width: 100%; /*Largura de 100%*/
+    }
+
+    /*CONTAINER DE TEXTO*/
+    .text-container{
+        display: flex; /*Flexbox*/
+        flex-direction: column; /*Alinha em Colunas*/
+        align-items: center; /*Alinha ao Centro no Eixo Perpendicular*/
+        width: 100%; /*Largura de 100%*/
+    }
+
+    /*ESCONDER MOBILE*/
+    .hidden-mobile{
+        margin: 0; /*Zera a Margem*/
+        display: flex; /*Aparece os Elementos com a Classe*/
+    }
+
+    /*ESCONDE NO DESKTOP*/
+    .hidden-desktop{
+        display: none; /*Esconde os Elementos*/
+    }
+
+    /*TODOS OS CARDS*/
+    .cards{
+        border-radius: 16px; /*Arredonda a Borda*/
+        padding: 80px 200px; /*Preenchimento de 80px na Vertical e Preenchimento de 200px na Horizontal*/
+    }
+
+    /*TÍTULOS DOS CARDS*/
+    .cards h3{
+        font-size: 1.8em; /*Tamanho da Fonte de 180%*/
+    }
+
+    /*ULTIMO CARD DA SEÇÃO NOSSOS SERVIÇOS*/
+    .nossos-servicos .cards:last-child{
+        margin: 0; /*Zera a Margem*/
+    }
+
+    /*RODAPÉ*/
+    footer{
+        width: 100%; /*Largura de 100%*/
+        height: 160px; /*Altura de 160px*/
+    }
+}
